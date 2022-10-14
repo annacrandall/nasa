@@ -24,10 +24,11 @@ const NasaApp = () => {
         <p>Powered by NASA</p>
       </header>
       <div id="content-container" className="grid grid-cols-1 sm:grid-cols-2">
-        <div id="photo-container" className="w-1/1 m-1">
+        <div id="photo-container" className="w-1/1 m-1 drop-shadow">
           <Picture apiData={apiData} />
         </div>
-        <div className="border-2 border-stone-700 rounded m-2 text-center">
+        <div id="info-container" className="text-center tracking-wide">
+          <div className="border-4 border-stone-700 m-2" id="info-border">
           <details className="border-2 border-stone-700 m-1 p-4 rounded">
             <summary>Image Information</summary>
             <p>Copyright: {apiData.copyright}</p>
@@ -35,10 +36,11 @@ const NasaApp = () => {
           </details>
           <details className="border-2 border-stone-700 m-1 p-4 rounded">
             <summary>Photo Explanation</summary>
-            <p className="m-1 p-1 overflow-clip tracking-wide">
+            <p className="m-1 p-1 overflow-clip">
               {apiData.explanation}
-            </p>
-          </details>
+              </p>
+            </details>
+           </div>
         </div>
       </div>
     </div>

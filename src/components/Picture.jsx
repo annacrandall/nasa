@@ -10,7 +10,7 @@ const Picture = ({ apiData }) => {
           }}
         ></img>
       ) : (
-        <p>Where's the data?</p>
+        <p className="text-center">Where's the data?</p>
       )}
     </div>
   );
