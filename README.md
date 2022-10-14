@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+To Deploy on Netlify: 
+[Netlify Link](https://nasa-apod-ac.netlify.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App, TailwindCSS, and node.JS. 
 
 ## Available Scripts
 
