@@ -16,7 +16,7 @@ const NasaApp = () => {
     <div id="app-container">
             <div>
           {apiData === null ? <p>loading</p> : <img alt="APOD">{apiData}</img>}
-            
+            </div>
     </div>
   );
 }
