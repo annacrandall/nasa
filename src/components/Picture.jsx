@@ -1,12 +1,12 @@
 const Picture = ({apiData}) => {
     return (
-        <div>
+        <div className="m-1" id=""> 
             {apiData.media_type === "image" ?
-                    <img src={apiData.url} alt="" className="md:h-96 md:w-auto rounded-md shadow-md border-2 object-contain" onClick={() => {
+                <img src={apiData.url} alt="NASA APOD"
+                    onClick={() => {
                         window.location.href = apiData.url
                     }}></img>
-                    : <p>Data not loading.</p>}
- 
+                : <p>Where's the data?</p>} 
         </div>
     )
 }
